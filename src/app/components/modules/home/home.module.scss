@@ -1,8 +1,11 @@
 @use "../../../theme/abstract/index" as *;
 
 .hero_section {
+  min-height: 95vh;
+  padding-bottom: 3rem;
   .hero_title {
     font-size: 5em;
+    line-height: normal;
   }
   p {
     max-width: 480px;

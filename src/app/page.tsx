@@ -1,5 +1,6 @@
-import Image from "next/image";
 import LeftSideBar, { Hero, MainSectionLayout } from "./components";
+import About from "./components/modules/about";
+import Resume from "./components/modules/resume";
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
       <LeftSideBar />
       <MainSectionLayout>
         <Hero />
+        <About />
+        <Resume />
       </MainSectionLayout>
     </div>
   );

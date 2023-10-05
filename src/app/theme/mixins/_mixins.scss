@@ -42,5 +42,24 @@
   .hero-name {
     color: $bg;
   }
+
+  .item {
+    &:hover {
+      ::before {
+        background-color: $bg !important;
+      }
+      ::after {
+        background-color: $bg !important;
+      }
+      span {
+        color: $bg !important;
+      }
+    }
+  }
+  @content;
+}
+
+@mixin text-scheme($text) {
+  color: $text;
   @content;
 }

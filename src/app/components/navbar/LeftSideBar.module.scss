@@ -1,5 +1,4 @@
 @use "../../theme/abstract/index" as *;
-
 .left_sidebar_container {
   max-width: 450px;
   width: 100%;
@@ -44,5 +43,11 @@
       border-radius: 25px;
       position: relative;
     }
+  }
+
+  @include lg {
+    inset: 0;
+    position: relative;
+    max-width: 100%;
   }
 }

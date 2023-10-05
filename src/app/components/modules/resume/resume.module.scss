@@ -1,0 +1,38 @@
+@use "../../../theme/abstract/index" as *;
+@use "../../../theme/mixins/mixins" as *;
+.resume_section {
+  min-height: 90vh;
+  margin-top: 2rem;
+  .resume_title {
+    margin-top: 10px;
+    font-size: 3em;
+  }
+  .resume_card {
+    .item {
+      position: relative;
+      padding-left: 70px;
+      padding-bottom: 10px;
+      cursor: pointer;
+      ::before {
+        content: "";
+        background-color: $color-text-light;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+      }
+      ::after {
+        content: "";
+        background-color: $color-text-light;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        border-radius: 50%;
+        left: 4px;
+        top: 0;
+      }
+    }
+  }
+}
