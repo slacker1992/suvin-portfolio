@@ -1,0 +1,10 @@
+@use "../../../theme/abstract/index" as *;
+
+.hero_section {
+  .hero_title {
+    font-size: 5em;
+  }
+  p {
+    max-width: 480px;
+  }
+}

@@ -1,0 +1,26 @@
+@use "../abstract" as *;
+@import "../mixins/mixins";
+
+.dark {
+  @include color-scheme($schema-dark...);
+}
+.light {
+  @include color-scheme($schema-light...);
+}
+
+.dark-secondary {
+  @include color-scheme($schema-dark-secondary...);
+}
+
+.theme-green {
+  @include color-theme($color-green-primary-dark, $dark-bg-primary);
+  .muted-text {
+    color: $color-green-primary-light;
+  }
+}
+.theme-orange {
+  @include color-theme($color-orange-primary-dark, $dark-bg-primary);
+  .muted-text {
+    color: $color-orange-primary-light;
+  }
+}
