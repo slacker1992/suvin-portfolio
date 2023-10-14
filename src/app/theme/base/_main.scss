@@ -1,7 +1,6 @@
 @use "../abstract" as *;
 @use "../mixins/mixins";
 @import "./reset";
-@import "./responsive";
 
 .subtitle-text-dark {
   @include text-scheme($color-text-light);

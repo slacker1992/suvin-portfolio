@@ -13,7 +13,7 @@ type Props = {};
 const LeftSideBar = (props: Props) => {
   return (
     <div className={styles.left_sidebar_container}>
-      <div className="border border-gray-800 hover:bg-gray-200 dark:bg-gray-800 w-6 h-6 flex items-center justify-center rounded-md mb-6 cursor-pointer dark:hover:bg-gray-700 transition-all duration-200 ease-out">
+      <div className="border border-gray-800 hover:bg-gray-200 dark:bg-gray-800 w-6 h-6 flex items-center justify-center rounded-md mb-6 dark:hover:bg-gray-700 transition-all duration-200 ease-out">
         <motion.div
           initial={{
             rotate: 0,

@@ -1,6 +1,7 @@
 "use client";
 import React, { useContext } from "react";
-import { BiUser } from "react-icons/bi";
+import { RiBriefcaseLine } from "react-icons/ri";
+
 import styles from "./resume.module.scss";
 import { ThemeContext } from "@/context/ThemeContext";
 
@@ -9,19 +10,19 @@ const Resume = () => {
 
   return (
     <section
-      className={`flex flex-col w-full h-full ${styles.resume_section} inset-0 mb-10`}
+      className={`flex flex-col w-full ${styles.resume_section}`}
       data-aos="fade-up"
     >
       <div
         className={`flex flex-row gap-2 items-center w-fit border-scheme px-4 py-2 rounded-full font-medium uppercase text-sm mb-10`}
       >
-        <BiUser className="font-medium" />
+        <RiBriefcaseLine className="font-medium" />
         <h5>Resume</h5>
       </div>
       <h1 className={styles.resume_title}>
         Education & <span className="hero-name">Experience</span>
       </h1>
-      <div className={`${styles.resume_card} w-full mt-10`}>
+      <div className={`${styles.resume_card} w-full`}>
         <div
           data-aos="fade-left"
           data-aos-duration="2000"
@@ -73,6 +74,10 @@ const Resume = () => {
           <h2 className={`text-2xl mb-2`}>Full-stack Developer</h2>
           <p className={`mb-8 subtitle-text-${theme}`}>
             Apply Bright IT Solutions
+          </p>
+          <h2 className={`text-2xl mb-2`}>Front-end Developer (React)</h2>
+          <p className={`mb-8 subtitle-text-${theme}`}>
+            Emuq Tech NY (Contract Basis)
           </p>
           <h2 className={`text-2xl mb-2`}>
             Bachelor Degree of Software Engineering

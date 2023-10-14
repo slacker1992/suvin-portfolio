@@ -51,3 +51,9 @@
     max-width: 100%;
   }
 }
+
+@media (width < 467px) {
+  .left_sidebar_container {
+    padding: 8px;
+  }
+}

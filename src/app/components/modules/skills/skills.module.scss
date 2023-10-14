@@ -1,0 +1,17 @@
+@use "../../../theme/abstract/index" as *;
+@use "../../../theme/mixins/mixins" as *;
+.skills_section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  min-height: max-content;
+  .skills_title {
+    margin-top: 10px;
+    font-size: 3em;
+  }
+  .skills_card {
+    p {
+      font-size: 1em;
+    }
+  }
+}

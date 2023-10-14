@@ -1,7 +1,7 @@
 @use "../../../theme/abstract/index" as *;
 
 .hero_section {
-  min-height: 95vh;
+  min-height: max-content;
   padding-bottom: 3rem;
   .hero_title {
     font-size: 5em;
@@ -9,5 +9,15 @@
   }
   p {
     max-width: 480px;
+  }
+}
+@media (width < 467px) {
+  .hero_section {
+    .hero_title {
+      font-size: 3em;
+    }
+    p {
+      max-width: 480px;
+    }
   }
 }

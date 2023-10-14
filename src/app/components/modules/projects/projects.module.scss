@@ -1,0 +1,16 @@
+@use "../../../theme/abstract/index" as *;
+@use "../../../theme/mixins/mixins" as *;
+.projects_section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  // min-height: fit-content;
+  .projects_title {
+    margin-top: 10px;
+    font-size: 3em;
+  }
+  .projects_card {
+    p {
+      font-size: 1em;
+    }
+  }
+}

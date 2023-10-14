@@ -1,0 +1,16 @@
+@use "../../../theme/abstract/index" as *;
+@use "../../../theme/mixins/mixins" as *;
+.specialization_section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 20px;
+  .specialization_title {
+    margin-top: 10px;
+    font-size: 3em;
+  }
+  .specialization_card {
+    p {
+      font-size: 1em;
+    }
+  }
+}

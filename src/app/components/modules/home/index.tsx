@@ -29,7 +29,7 @@ const Hero: React.FC<any> = (props: Props) => {
         simple like that!
       </p>
       <ComputerCanvas />
-      <div className="flex flex-row w-1/2 justify-between">
+      <div className="flex flex-row w-full lg:w-1/2 justify-between">
         <h1 className="flex flex-col items-center justify-center hero-name text-[4rem]">
           3+{" "}
           <span
