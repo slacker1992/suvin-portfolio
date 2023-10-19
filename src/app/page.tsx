@@ -2,7 +2,8 @@ import dynamic from "next/dynamic";
 import LeftSideBar, { Hero, MainSectionLayout } from "./components";
 import Skills from "./components/modules/skills";
 import Projects from "./components/modules/projects";
-
+import Testimonials from "./components/modules/testimonials";
+import "swiper/css";
 const Specialization = dynamic(
   () => import("./components/modules/specialization"),
   {
@@ -26,6 +27,7 @@ export default function Home() {
         <Specialization />
         <Skills />
         <Projects />
+        <Testimonials />
       </MainSectionLayout>
     </div>
   );

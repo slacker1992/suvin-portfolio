@@ -11,9 +11,42 @@
   .border-scheme {
     border: 1px solid $b;
   }
+
+  .btn-rounded {
+    background-color: $bg;
+    width: max-content;
+    height: auto;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid $text;
+  }
 }
 
 @mixin color-theme($bg, $text, $iconSize: 20px) {
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+    padding-left: 1.25rem /* 20px */;
+    padding-right: 1.25rem /* 20px */;
+  }
+
+  .link-underline-black {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient($bg, $bg);
+    padding-left: 1.25rem /* 20px */;
+    padding-right: 1.25rem /* 20px */;
+  }
+
+  .link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+
   .btn-theme {
     color: $text;
     background-color: $bg;
@@ -33,6 +66,15 @@
       background-color: transparent;
       border: 1px solid $bg;
       color: $bg;
+    }
+  }
+
+  .extended {
+    &:hover {
+      border: 2px solid $bg;
+      .icon-hover {
+        color: $bg;
+      }
     }
   }
   .icon-text {

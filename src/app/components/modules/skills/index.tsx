@@ -3,8 +3,6 @@ import React, { useContext } from "react";
 import { LiaShapesSolid } from "react-icons/lia";
 import styles from "./skills.module.scss";
 import { ThemeContext } from "@/context/ThemeContext";
-import Link from "next/link";
-import Image from "next/image";
 import Skill from "./Skill";
 
 const Skills = () => {
@@ -26,24 +24,6 @@ const Skills = () => {
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 transition-all duration-200 ease-in-out">
         <Skill
-          image_name="html"
-          percentage="95"
-          animation="fade-down-left"
-          title="HTML"
-        />
-        <Skill
-          image_name="css"
-          percentage="95"
-          animation="fade-down-right"
-          title="CSS"
-        />
-        <Skill
-          image_name="javascript"
-          percentage="95"
-          animation="zoom-in-left"
-          title="Javascript"
-        />
-        <Skill
           image_name="reactjs"
           percentage="100"
           animation="zoom-in-right"
@@ -57,10 +37,37 @@ const Skills = () => {
         />
         <Skill
           image_name="redux"
-          percentage="90"
+          percentage="100"
           animation="flip-left"
           title="Redux"
         />
+        <Skill
+          image_name="javascript"
+          percentage="100"
+          animation="zoom-in-left"
+          title="Javascript"
+        />
+        <Skill
+          image_name="html"
+          percentage="100"
+          animation="fade-down-left"
+          title="HTML"
+        />
+
+        <Skill
+          image_name="css"
+          percentage="100"
+          animation="fade-down-right"
+          title="CSS"
+        />
+
+        <Skill
+          image_name="sass"
+          percentage="100"
+          animation="fade-down-right"
+          title="SaaS"
+        />
+
         <Skill
           image_name="nodejs"
           percentage="90"
@@ -86,7 +93,10 @@ const Skills = () => {
           title="Typescript"
         />
         <Skill image_name="mongodb" percentage="90" title="Mongodb" />
+        <Skill image_name="laravel" percentage="80" title="Laravel" />
+        <Skill image_name="mysql" percentage="95" title="Mysql" />
         <Skill image_name="git" percentage="95" title="Git" />
+        <Skill image_name="aws" percentage="95" title="Aws" />
       </div>
     </section>
   );

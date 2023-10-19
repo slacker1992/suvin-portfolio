@@ -1,15 +1,14 @@
 @use "../../../theme/abstract/index" as *;
 @use "../../../theme/mixins/mixins" as *;
-.projects_section {
+.testimonials_section {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  // min-height: fit-content;
-  padding-bottom: 2rem;
-  .projects_title {
+  margin-top: 20px;
+  .testimonials_title {
     margin-top: 10px;
     font-size: 3em;
   }
-  .projects_card {
+  .testimonials_card {
     p {
       font-size: 1em;
     }

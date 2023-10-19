@@ -29,32 +29,69 @@ const Projects = () => {
       </h1>
 
       <div className="flex flex-col gap-2">
-        <Image
-          src={portfolio1}
-          alt="La massage New Zealand"
-          loading="lazy"
-          className="rounded-3xl max-[767px]:mb-4 "
-        />
-
-        <div className="flex flex-col lg:flex-row gap-4 w-full items-center justify-between">
+        <div className="mb-4 pb-10 rounded-3xl w-full bg-gray-200 dark:bg-[#464646] cursor-pointer hover:scale-105">
           <Image
-            src={portfolio3}
+            src={portfolio1}
             alt="La massage New Zealand"
-            className=" max-[767px]:mb-4 rounded-3xl w-full lg:w-1/2 lg:h-96 object-cover lg:object-contain object-center bg-[#464646]"
+            loading="lazy"
+            className="w-full h-full rounded-3xl object-cover lg:object-contain object-center"
           />
-          <Image
-            src={portfolio4}
-            alt="La massage New Zealand"
-            className=" max-[767px]:mb-4 rounded-3xl w-full lg:w-1/2 lg:h-96 object-cover object-center"
-          />
+          <h3 className="text-2xl tracking-wider link link-underline link-underline-black max-w-max px-5 mt-10">
+            La Massage{" "}
+          </h3>
+          <p className="max-w-1/2 px-5 text-xs text-gray-900 dark:text-gray-500">
+            La massage is a massage and therapeutical services center located in
+            New Zealand. La Massage website was made as per client requirement
+            by using wordpress and booknetic plugin.{" "}
+          </p>
         </div>
+        <div className="flex flex-col lg:flex-row gap-4 w-full items-center justify-between lg:h-[26rem]">
+          <div className="max-[767px]:mb-4 rounded-3xl w-full lg:w-1/2 bg-gray-200 dark:bg-[#464646] cursor-pointer hover:scale-105 pb-10">
+            <Image
+              src={portfolio3}
+              alt="Radiant Spark"
+              className="w-full h-full object-cover rounded-3xl lg:object-contain object-center"
+            />
+            <h3 className="text-2xl tracking-wider link link-underline link-underline-black max-w-max px-5 mt-10">
+              Radiant Spark Technology{" "}
+            </h3>
+            <p className="max-w-1/2 px-5 text-xs text-gray-900 dark:text-gray-500">
+              Radiant Spark Technology is a software company is located in Sri
+              Lanka. website made by using React js and Sanity CMS.
+            </p>
+          </div>
 
-        <Image
-          src={portfolio2}
-          alt="La massage New Zealand"
-          loading="lazy"
-          className=" max-[767px]:mb-4 rounded-3xl "
-        />
+          <div className="max-[767px]:mb-4 rounded-3xl w-full lg:w-1/2 bg-gray-200 dark:bg-[#464646] cursor-pointer hover:scale-105 pb-10">
+            <Image
+              src={portfolio4}
+              alt="La massage New Zealand"
+              className="w-full h-full object-cover rounded-3xl lg:object-contain object-center"
+            />
+            <h3 className="text-2xl tracking-wider link link-underline link-underline-black max-w-max px-5 mt-10">
+              Prestige Auto Care
+            </h3>
+            <p className="max-w-1/2 px-5 text-xs text-gray-900 dark:text-gray-500">
+              Radiant Spark Technology is a software company is located in Sri
+              Lanka. website made by using React js and Sanity CMS.
+            </p>
+          </div>
+        </div>
+        <div className="max-[767px]:mb-4 rounded-3xl w-full bg-gray-200 dark:bg-[#464646] cursor-pointer hover:scale-105 pb-10">
+          <Image
+            src={portfolio2}
+            alt="La massage New Zealand"
+            loading="lazy"
+            className="cursor-pointer rounded-3xl"
+          />
+          <h3 className="text-2xl tracking-wider link link-underline link-underline-black max-w-max px-5 mt-10">
+            Sysdee
+          </h3>
+          <p className="max-w-1/2 px-5 text-xs text-gray-900 dark:text-gray-500">
+            Sysdee known as a Creative IT Agency And Solutions Since 2005.
+            created by using next js, tailwind css and sanity CMS with live
+            editing.
+          </p>
+        </div>
       </div>
     </section>
   );
