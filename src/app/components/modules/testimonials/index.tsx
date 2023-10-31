@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import sandamal from "@/images/chamara.png";
 import chubby from "@/images/chubby.png";
+import bad_black from "@/images/bad_black.png";
 const reviews = [
   {
     name: "Chamara Sandamal",
@@ -34,7 +35,7 @@ const reviews = [
     description:
       "Our Company has been working with Suvin since 2020. Suvin has evolved in a very positive way through the years. We recently worked with him to update our website. We have been mainly working with Suvin. We are beyond pleased with Suvin's impeccable service. He is extremely helpful in guiding us through the whole process. He is very knowledgeable. He pays close attention to details. Overall, we are very pleased with Suvin.",
     rate: 5,
-    image: chubby,
+    image: bad_black,
   },
 ];
 const Testimonials = () => {
