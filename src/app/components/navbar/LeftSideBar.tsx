@@ -51,7 +51,7 @@ const LeftSideBar = (props: Props) => {
         <div className="w-full px-5">
           <div className="flex flex-col items-center py-3">
             <h6>suvinchandula@hotmail.com</h6>
-            <p>Base in Colombo, SL</p>
+            <p>Base in Tokyo, Japan</p>
           </div>
           <div className="flex flex-row w-full gap-2 items-center justify-around mb-3">
             <Link
